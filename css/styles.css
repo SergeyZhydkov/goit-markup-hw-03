@@ -6,6 +6,19 @@
   --white-background: #ffffff;
   --primary-brand: #4d5ae5;
   --pressed-state: #404bbf;
+  --cornflower: #e7e9fc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -13,7 +26,13 @@ body {
   color: var(--text);
   background-color: var(--white-background);
 }
-
+.container {
+  width: 1158px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -43,6 +62,7 @@ body {
 }
 .list {
   list-style-type: none;
+  display: flex;
 }
 .address {
   font-style: normal;
@@ -65,6 +85,7 @@ body {
 }
 .hero {
   background-color: var(--dark);
+  padding: 188px 472px;
 }
 .hero-title {
   font-weight: 700;
@@ -73,6 +94,12 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-background);
+  display: block;
+  width: 496px;
+  height: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
 }
 
 .but {
@@ -85,11 +112,32 @@ body {
   background: var(--primary-brand);
   color: var(--white-background);
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 169px;
+  height: 56px;
 }
 .but:hover,
 .but:focus {
   background-color: var(--pressed-state);
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.feature-list {
+  display: flex;
+}
+
 .feature-title {
   font-weight: 500;
   font-size: 20px;
@@ -173,6 +221,13 @@ body {
   color: var(--text);
 }
 
+.team-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: calc((100%-72) / 4);
+}
+
 /* footer */
 .foot {
   background-color: var(--dark);
@@ -186,4 +241,37 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light);
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.set-list {
+  flex-wrap: wrap;
+}
+.set-items {
+  width: 360px;
+  height: 420px;
+  padding: 0px 0px 32px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex-shrink: 0;
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white-background);
+}
+.set-text {
+  padding: 0px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
 }
