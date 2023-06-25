@@ -359,9 +359,10 @@ flex-direction: row;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  padding: 0;
 }
 .set-items {
-  width: width: calc((100% - 48px) / 3);
+  width: width: calc((100% -48px) /3);
   height: 420px;
   padding: 0px 0px 32px 0px;
   flex-direction: column;
