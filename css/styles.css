@@ -60,7 +60,6 @@ img {
   color: var(--primary-brand);
   display: inline-block;
   margin-bottom: 16px;
-  padding-left: 156px;
 }
 .link {
   text-decoration: none;
@@ -331,7 +330,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--light);
   max-width: 264px;
-  padding-left: 156px;
 }
 .header-box {
   border-bottom: 1px solid var(--cornflower);
