@@ -266,7 +266,7 @@ flex-direction: row;
 }
 .list-btn {
   justify-content: center;
-  margin-right: 24px;
+  gap: 24px;
   margin-bottom: 72px;
 }
 .list-btn:last-child {
@@ -298,6 +298,7 @@ flex-direction: row;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+  margin-bottom: 8px;
 }
 .main-page {
   font-size: 16px;
